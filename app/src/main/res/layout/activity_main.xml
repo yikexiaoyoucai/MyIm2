@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cui.test.ui.MainActivity"
+    android:orientation="vertical">
+<com.cui.test.myview.Mytitle
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/t1"></com.cui.test.myview.Mytitle>
+    <FrameLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/fl"
+        android:background="#FFF0F0F0"></FrameLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="消息"
+            android:textSize="20sp"
+            android:id="@+id/b1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="联系人"
+            android:id="@+id/b2"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="动态"
+            android:textSize="20sp"
+            android:id="@+id/b3"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>
